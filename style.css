@@ -1,7 +1,11 @@
- html{
-    background: #000;
+
+html{
+    background: #000 !important;
 }
 
+body{
+    background-color: #000 !important;
+}
 
 /* header section */
 
@@ -62,20 +66,21 @@ nav ul li a:hover{
     background-color: #000;
 }
  h1{
-    font-size: 40px;
-    margin: 40px;
-    font-weight: 500;
+    font-size: 75px !important;
+    margin: 0 0 8px;
+    font-weight: 600 !important;
     color: white;
     text-transform: capitalize;
 }
 h1 span{
     
-    background:  linear-gradient(90deg,#12D8FA  ,#6E48AA );/* Gradient colors */
+    background: linear-gradient(to right, #20D4FE 0%, #B722FF 100%);/* Gradient colors */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .wrapper p{
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 500 !important;
 }
 .btn-a{
     
@@ -87,7 +92,7 @@ h1 span{
         color: white;
         font-size: 20px;
         font-weight: 400;
-        
+        margin: 70px 0;
     
 }
 .grid{
@@ -100,6 +105,30 @@ h1 span{
      ;
   
 }
+
+.dark{
+    background-color:#222222AD !important;
+    width: 24rem;
+    height: auto;
+     margin-bottom: 20px;
+     padding: 15px 10px;
+     border-radius: 4px;
+}
+.dark:focus{
+    background-color:#222222AD ;
+}
+.justi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.justi p{
+    color: white;
+    font-size: 19px;
+    font-weight: 700 !important;
+}
+
 .item-1{
     grid-area: I1;
 }
@@ -115,7 +144,7 @@ h1 span{
 .item-5{
     grid-area: I5;
 }
-  
+
 
 
 /* services section */
@@ -133,13 +162,10 @@ h1 span{
     -webkit-text-fill-color: transparent;
 }
 .card img{
-    width: 40px;
-     margin: 30px;
+    width: 30px !important;
+     margin: 20px;
 }
- .card:hover{
-    border-image-source: linear-gradient(45deg,#12D8FA   ,#6E48AA );
-    border-image-slice: 1;
- }
+ 
  .card p{
     font-size: 12px;
  }
@@ -172,6 +198,12 @@ h1 span{
     -webkit-text-fill-color: transparent;
     
 }
+.card:hover .icon-div i{
+    background-image:  linear-gradient(45deg,#12D8FA 3%  ,#6E48AA 90% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparen
+    
+}
 .about{
     margin-top: 100px;
 }
@@ -180,28 +212,31 @@ h1 span{
     background-image:  linear-gradient(180deg,#12D8FA 1% ,#6E48AA 90% );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 10px;
+    
 }
 
 .counting h4{
     background-image:  linear-gradient(180deg,#12D8FA  ,#6E48AA );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 32px !important;
 
 }
+
 .apart{
     margin-top: 100px;
 }
-.apart h2::before{
-    content: '01';
+.apart .counter span{
+    content: '';
     width: 10px;
     height: 10px;
-    background:  linear-gradient(90deg,#12D8FA  ,#6E48AA );
+    background:  linear-gradient(180deg,#12D8FA  ,#6E48AA );
    color: white;
-   font-size: 14px;
-   margin-left: -25px;
+   font-size: 12px;
+    text-align: center;
     padding: 10px 15px;
     border-radius: 50%;
+    
 
 
 }
@@ -209,7 +244,7 @@ h1 span{
     content: '02';
     width: 10px;
     height: 10px;
-    background:  linear-gradient(90deg,#12D8FA  ,#6E48AA );
+    background:  linear-gradient(180deg,#12D8FA  ,#6E48AA );
    color: white;
    font-size: 14px;
    margin-left: -25px;
@@ -228,9 +263,8 @@ h1 span{
     border-radius: 50%;
 }
 h5{
-    background-image:  linear-gradient(180deg,#12D8FA  ,#6E48AA );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+   color: white !important;
+   font-weight: 500;
 }
 ul li{
     color: white;
@@ -241,7 +275,7 @@ ul li{
     border-top: 1px solid white;
     padding-top:20px;
 }
-ul li i{
+ul li .footer-icon{
 
     background-image: linear-gradient(#12D8FA,#6E48AA);
     -webkit-background-clip: text;
@@ -254,21 +288,18 @@ ul li i{
     align-items: center;
     justify-content: center;
 }
-content: '01';
-width: 10px;
-height: 10px;
-background:  linear-gradient(90deg,#12D8FA  ,#6E48AA );
-color: white;
-font-size: 14px;
-margin-left: -25px;
-padding: 10px 15px;
-border-radius: 50%;
+
 /* index2 */
 .fail-section p{
     color: white;
     font-size: 25px;
     margin: 20px;
 
+}
+.span-tag-1{
+    background-image: linear-gradient(#12D8FA,#6E48AA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* software product */
@@ -278,13 +309,19 @@ border-radius: 50%;
     -webkit-text-fill-color: transparent;
 
 }
+.span-number{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
 
-.span-tag span{
+.span-number span{
 
     background-image: linear-gradient(#12D8FA,#6E48AA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size:60px;
+    font-size:70px;
     font-weight: 500;
     margin-bottom: 10px;
 }
@@ -293,9 +330,10 @@ border-radius: 50%;
     font-size: 18px;
     font-weight: 500;
 }
-.span-tag h2{
+.span-number h2{
     color: white;
     margin-top: 20px;
+    font-weight: 700 !important;
 }
 .fail-section p{
     font-size: 18px;
@@ -315,7 +353,7 @@ border-radius: 50%;
 
 /* index3 work start here */
 .growth-box h2{
-    font-size: 45px;
+    font-size: 42px;
     font-weight: 700;
 }
 .growth-box span{
@@ -338,9 +376,11 @@ border-radius: 50%;
 
 .man-pic{
 
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
+    width: 100px !important;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+    
 }
 .ability-section .success{
     font-weight: 500;
@@ -434,20 +474,49 @@ border-radius: 50%;
     
 }
 
+.span-number span{
+    background-image: linear-gradient(#12D8FA,#6E48AA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
+}
+.span-number p{
+    color: white;
+}
+.span-number h2{
+    color: white;
+}
 
+.software-product .main-h2{
+    margin: 50px 10px;
+}
 .mock-div{
     border-left: 1px solid white;
     padding-left: 20px;
     
 }
 .developer-section span{
-    background-image: linear-gradient(#12D8FA,#6E48AA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
     font-size: 60px;
     font-weight: 700;
 
+}
+.testimonial-title{
+    background-image: linear-gradient( 180deg,  #12D8FA, #6E48AA );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.content-part h2{
+    font-size: 24px;
+    font-weight: 700;
+  
+}
+.content-part p{
+    font-size: 16px;
+    
 }
 .developer-section h2{
     color: white;
@@ -461,6 +530,10 @@ border-radius: 50%;
 .developer-section p{
     font-size: 18px;
     font-weight: 400;
+}
+.footer-p{
+    font-size: 16px !important;
+    font-weight: 300 !important;
 }
 .banner-sec div h2{
     font-size: 30px;
